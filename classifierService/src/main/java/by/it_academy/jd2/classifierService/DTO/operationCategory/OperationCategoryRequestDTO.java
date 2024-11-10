@@ -17,5 +17,5 @@ public class OperationCategoryRequestDTO {
     @Size(min = 3, message = "Название должно содержать хотя бы 3 символа")
     @Size(max = 100, message = "Название не должно превышать 100 символов")
     @Pattern(regexp = "^[А-Яа-я]+$", message = "Название должно содержать только русские буквы")
-    String title;
+    private String title;
 }
